@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Elite - Seu portal de noticias sobre games e tecnologia</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/imagens/console-cont.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -22,9 +23,9 @@
             <nav class="top-nav">
                 <ul>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Carreiras</a></li>
-                    <li><a href="#">Anuncie</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                   
+                    
                 </ul>
             </nav>
         </div>
@@ -36,12 +37,12 @@
                 <p>Seu portal de games e tecnologia</p>
             </div>
 
-            <div class="search-bar">
+            <!-- <div class="search-bar">
                 <form action="#">
                     <input type="text" placeholder="Buscar notícias, reviews...">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
-            </div>
+            </div> -->
 
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -56,10 +57,10 @@
     <nav class="main-nav">
         <div class="container">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#noticias">Notícias</a></li>
                 <li><a href="#jogos">Jogos</a></li>
-                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#lancamentos">Lançamentos</a></li>
             </ul>
         </div>
     </nav>
@@ -115,7 +116,7 @@
 
                 <div class="news-grid">
                     <article class="news-card">
-                        <img src="imagens/play5.jpg" alt="Final Fantasy XVI">
+                        <img src="imagens/play5.jpg" alt="PS5">
                         <div class="news-content">
                          
                             <h3><a href="https://www.tecmundo.com.br/voxel/501143-playstation-tem-jogos-para-ps4-e-ps5-com-ate-90-de-desconto.htm?ab=true&">PlayStation tem jogos para PS4 e PS5 com até 90% de desconto</a></h3>
@@ -145,14 +146,13 @@
                         </div>
                     </article>
 
-                <button class="load-more" href="https://www.tecmundo.com.br/voxel/noticias">Carregar Mais Notícias</button>
-                
-
             </section>
+
+            <button class="load-more"><a href="https://www.tecmundo.com.br/voxel/noticias">Carregar Mais Notícias</a></button>
 
        
             <section class="reviews-section" id="jogos">
-                <h2 class="section-title">Jogos populares</h2>
+                <h2 class="section-title">Jogos</h2>
 
                 <div class="reviews-slider">
                     <div class="review-card">
@@ -195,12 +195,14 @@
                     </div>
                 </div>
             </section>
+            <button class="load-more"><a href="https://store.steampowered.com/games/?l=brazilian">Carregar Mais Jogos</a></button>
+           
 
            
            
         </div>
     </main>
-    <aside class="sidebar">
+    <!-- <aside class="sidebar">
         <div class="container">
             <section class="sidebar-widget">
                 <h3 class="widget-title">Mais Populares</h3>
@@ -241,7 +243,49 @@
                         </div>
                     </li>
                 </ul>
-            </section>
+            </section> -->
+            <aside class="sidebar">
+                <div class="container" id="lancamentos">
+                    <section class="sidebar-widget">
+                        <h3 class="widget-title">Lançamentos 2025</h3>
+                        <ul class="popular-posts">
+                            <li>
+                                <span class="popular-rank">1</span>
+                                <div class="popular-content">
+                                    <a href="#">Grand Theft Auto VI</a>
+                                    <!-- <span class="meta">5.4K visualizações</span> -->
+                                </div>
+                            </li>
+                            <li>
+                                <span class="popular-rank">2</span>
+                                <div class="popular-content">
+                                    <a href="#">Monster Hunter Wilds</a>
+                                    <!-- <span class="meta">4.8K visualizações</span> -->
+                                </div>
+                            </li>
+                            <li>
+                                <span class="popular-rank">3</span>
+                                <div class="popular-content">
+                                    <a href="#">Assassin's Creed Shadows</a>
+                                    <!-- <span class="meta">4.2K visualizações</span> -->
+                                </div>
+                            </li>
+                            <li>
+                                <span class="popular-rank">4</span>
+                                <div class="popular-content">
+                                    <a href="#">DOOM: The Dark Ages</a>
+                                    <!-- <span class="meta">3.9K visualizações</span> -->
+                                </div>
+                            </li>
+                            <li>
+                                <span class="popular-rank">5</span>
+                                <div class="popular-content">
+                                    <a href="#">Mafia: The Old Country</a>
+                                    <!-- <span class="meta">3.5K visualizações</span> -->
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
             <section class="sidebar-widget newsletter-widget">
                 <h3 class="widget-title">Newsletter</h3>
                 <p>Receba as principais notícias diretamente no seu e-mail</p>
@@ -266,7 +310,7 @@
         <div class="container">
             <div class="footer-columns">
                 <div class="footer-column">
-                    <h4>elit Game</h4>
+                    <h4>Games Elit</h4>
                     <p>O maior portal de games e tecnologia do Brasil, trazendo notícias, análises e vídeos.</p>
                 </div>
                 <div class="footer-column">
@@ -289,7 +333,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-column">
+                <div class="footer-column" id="contato">
                     <h4>Contato</h4>
                     <address>
                         <p><i class="fas fa-map-marker-alt"></i> nossa senhora do socorro ,centro historico 166 - sergipe/se</p>
@@ -300,7 +344,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Games elit. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Games Elit. Todos os direitos reservados.</p>
                 <div class="footer-links">
                     <a href="#">Termos</a>
                     <a href="#">Privacidade</a>
